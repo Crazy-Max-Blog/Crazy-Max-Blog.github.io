@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrazyMax Teshnologies</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <div class="left"> <a href="/"> <img src="/crazymax.png"> </a> </div>
+        <div class="links">
+            <a href="/about_max">Об авторе</a>
+            <!--<a href="#news">News</a>-->
+            <div class="dropdown">
+                <button class="dropbtn"> Соцсети <i class="fa fa-caret-down"></i> </button>
+                <div class="dropdown-content">
+                  <a href="https://dzen.ru/crazymaxshow" target="_blank">Дзен</a>
+                  <a href="https://vk.com/id739354599" target="_blank">ВКонтакте</a>
+                  <!--<a href="#">Link 3</a>-->
+                </div>
+            </div> 
+        </div>
+    </div>
+</header>
+<main>   
+    <h1> Блог </h1>     
+    <hr> <!--горизонтальная линия -->
+    <div class="foto">
+        <a href="cheburaska" style="color: rgb(0, 0, 0); text-decoration: none;">
+            <div>
+                <img src="https://github.com/Crazy-Max-Blog/Game_Cheburaska/blob/main/schemes/1.jpg?raw=true" alt="" width="150">
+                <p> Чебурашка </p>   
+            </div>             
+        </a>
+    </div>
+    <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 51591239, onlyWidgets: true});
+</script>
+
+<!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+</script>
+</main>
+    <footer><p1>Copuringht &#9400 CrazyMax Company 2023</p1></footer>
+</body>
+</html>
