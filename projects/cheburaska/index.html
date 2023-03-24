@@ -7,7 +7,12 @@
     <title>CrazyMax Teshnologies</title>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Инциализация виджета комминтариев ВКонтакте -->
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+    <script type="text/javascript">
+        VK.init({apiId: 51591239, onlyWidgets: true});
+    </script>
 </head>
 <body>
     <header>
@@ -28,29 +33,49 @@
     </div>
 </header>
 <main>   
-    <h1> Блог </h1>     
+    <h1> Описание </h1>     
     <hr> <!--горизонтальная линия -->
-    <div class="foto">
-        <a href="cheburaska" style="color: rgb(0, 0, 0); text-decoration: none;">
+    <p>Игра "Чебурашка"</p>
+
+    <h1> Фотки </h1>
+    <hr>
+    <div>
+        <div  class="main">
+            <iframe name="gallery" width="550" height="550" style="border: 0px" src="страницы/1.html"></iframe>
+
+        </div>
+        
+        <div class="one">
             <div>
-                <img src="https://github.com/Crazy-Max-Blog/Game_Cheburaska/blob/main/schemes/1.jpg?raw=true" alt="" width="150">
-                <p> Чебурашка </p>   
-            </div>             
-        </a>
+                <a href="icons/cat_tied_64.png" target="gallery"><img src="icons/cat_tied_64.png" alt="" ></a>
+            </div>
+            <div>
+                <a href="страницы/2.html" target="gallery"> <img src="icons/cat_eyes_64.png" alt=""></a>
+            </div>    
+            <div>
+                <a href="страницы/3.html" target="gallery"><img src="icons/cat_purr_64.png" alt=""></a>
+            </div> 
+            <div>
+                <a href="страницы/4.html" target="gallery"><img src="icons/cat_cage_64.png" alt=""></a>
+            </div> 
+            <div>
+                <a href="страницы/5.html" target="gallery"><img src="icons/cat_clean_64.png" alt=""></a>
+            </div> 
+            <div>
+                <a href="страницы/6.html" target="gallery"><img src="icons/cat_box_64.png" alt=""></a>
+            </div> 
+        </div>           
     </div>
-    <!-- Put this script tag to the <head> of your page -->
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
 
-<script type="text/javascript">
-  VK.init({apiId: 51591239, onlyWidgets: true});
-</script>
+    <!-- Вывод виджета комминтариев ВКонтакте -->
+    <div id="vk_comments"></div>
+    <script type="text/javascript">
+        VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+    </script>
 
-<!-- Put this div tag to the place, where the Comments block will be -->
-<div id="vk_comments"></div>
-<script type="text/javascript">
-VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
-</script>
 </main>
-    <footer><p1>Copuringht &#9400 CrazyMax Company 2023</p1></footer>
+    <footer>
+        <p1>Copuringht &#9400 CrazyMax 2023</p1>
+    </footer>
 </body>
 </html>
