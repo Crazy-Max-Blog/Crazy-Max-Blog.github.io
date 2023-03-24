@@ -70,8 +70,8 @@ footer{
     background-color: rgb(0, 194, 0);
     /* margin: 0px;  */
     padding: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 150px;
     /* установка флекс */
     display: flex;
@@ -115,7 +115,7 @@ h1, h2, h4{
 
 .foto div{
     background-color: rgb(240, 240, 240);
-    width: 135px;
+    width: 145px;
     height: 220px;
     padding: 10px;
     border-radius: 15px;
