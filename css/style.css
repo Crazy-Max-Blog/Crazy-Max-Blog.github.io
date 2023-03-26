@@ -46,33 +46,6 @@ header {
   text-align: center;
 }
 
-.btn_github {
-  display: inline-block; /* Строчно-блочный элемент */
-  background: #7e00c7; /* Серый цвет фона */
-  color: #fff; /* Белый цвет текста */
-  padding: 1rem 1.5rem; /* Поля вокруг текста */
-  text-decoration: none; /* Убираем подчёркивание */
-  border-radius: 3px; /* Скругляем уголки */
- }
-
-.btn_support {
-  display: inline-block; /* Строчно-блочный элемент */
-  background: #00d9ff; /* Серый цвет фона */
-  color: #fff; /* Белый цвет текста */
-  padding: 1rem 1.5rem; /* Поля вокруг текста */
-  text-decoration: none; /* Убираем подчёркивание */
-  border-radius: 3px; /* Скругляем уголки */
- }
-
- .btn_download {
-  display: inline-block; /* Строчно-блочный элемент */
-  background: #00ff40; /* Серый цвет фона */
-  color: #fff; /* Белый цвет текста */
-  padding: 1rem 1.5rem; /* Поля вокруг текста */
-  text-decoration: none; /* Убираем подчёркивание */
-  border-radius: 3px; /* Скругляем уголки */
- }
-
 .left {
     float: left;
 }
@@ -177,4 +150,34 @@ h1, h2, h4{
 
 .center{
   text-align: center;
+}
+
+
+.foto{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+.foto div{
+    background-color: rgb(245, 245, 245);
+    width: 155px;
+    height: 220px;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+/* .foto>div>img{ 
+    border-radius: 5px;
+}*/
+
+.foto>div>p{
+    /* color: blue; */
+    font-size: 16pt;
+    /* font-family: cursive; */
+    text-align: center;
 }
