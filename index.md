@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+{% for page in site.pages %}
+    <url>
+        <loc>http://blog.dside.ru{{ page.url | remove: 'index.html' }}</loc>
+    </url>
+    {% endfor %}
