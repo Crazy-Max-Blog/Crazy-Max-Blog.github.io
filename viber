@@ -1,0 +1,5 @@
+{
+  "status": 0,
+  "status_message": "ok",
+  "event_types": ["delivered", "seen"] //Not yet implemented
+}
