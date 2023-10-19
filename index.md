@@ -1,6 +1,7 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+# .public_repositories
 
 layout: home
 ---
@@ -11,4 +12,4 @@ layout: home
     </url>
     {% endfor %}
 
-{% for repo in site.github.public_repositories limit:28 %} <a href = "{{repo.html_url}}">{{repo.name}}</a><br> {%endfor%}
+{% for repo in site.github limit:5 %} <a href = "{{repo.html_url}}">{{repo.name}}</a><br> {%endfor%}
