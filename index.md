@@ -5,6 +5,7 @@
 
 layout: home
 ---
+<meta name="yandex-verification" content="c1d96685742fc61d" />
 
 {% for page in site.pages %}
     <url>
