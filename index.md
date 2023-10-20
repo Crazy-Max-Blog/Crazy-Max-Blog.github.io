@@ -1,3 +1,9 @@
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+# 
+
+layout: home
+---
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -14,14 +20,8 @@
    });
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/95320866" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-# 
+<!-- /Yandex.Metrika counter -->
 
-layout: home
----
-<meta name="yandex-verification" content="c1d96685742fc61d" />
 
 {% for page in site.pages %}
     <url>
