@@ -5,10 +5,11 @@
         <script>
           let tg = window.Telegram.WebApp;
           tg.sendData("test");
+          document.getElementById("pp").text=tg.initDataUnsafe.user.username;
         </script>
     </head>
     <body>
-        <p>qwerty</p>
+        <p id="pp">qwerty</p>
         <button onclick="tg.sendData('test');">123</button>
     </body>
 </html>
