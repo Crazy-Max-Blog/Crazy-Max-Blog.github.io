@@ -4,6 +4,11 @@
 
 layout: home
 ---
+
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -30,3 +35,14 @@ layout: home
     {% endfor %}
 
 {% for repo in site.github.public_repositories limit:5 %} <a href = "/{{repo.name}}">{{repo.name}}</a><br> {%endfor%}
+
+<!-- Yandex.RTB R-A-8856439-1 -->
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-8856439-1",
+		"type": "floorAd",
+		"platform": "touch"
+	})
+})
+</script>
