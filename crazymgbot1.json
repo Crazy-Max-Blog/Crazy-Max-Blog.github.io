@@ -23,7 +23,7 @@
           },
           "boards": [
             {
-              "name": "AI Thinker ESP32-CAM"
+              "name": "MGBOT MGB-CAM"
             },
             {
               "name": "MGBOT IOTIK 32A"
