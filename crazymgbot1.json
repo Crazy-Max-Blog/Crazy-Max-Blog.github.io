@@ -23,19 +23,13 @@
           },
           "boards": [
             {
-              "name": "ESP32 Dev Board"
+              "name": "AI Thinker ESP32-CAM"
             },
             {
-              "name": "ESP32-S2 Dev Board"
+              "name": "MGBOT IOTIK 32A"
             },
             {
-              "name": "ESP32-S3 Dev Board"
-            },
-            {
-              "name": "ESP32-C3 Dev Board"
-            },
-            {
-              "name": "Arduino Nano ESP32"
+              "name": "MGBOT IOTIK 32B"
             }
           ],
           "toolsDependencies": [
