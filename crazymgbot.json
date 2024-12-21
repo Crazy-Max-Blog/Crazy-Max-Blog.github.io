@@ -14,10 +14,10 @@
           "architecture": "esp32",
           "version": "1.0.0",
           "category": "ESP32",
-          "url": "https://downloader.disk.yandex.ru/disk/3110357c51a2732cee016f85c90f9979add1270dcf8d1fda719af99c7eacae40/6766d971/YvAxS3tOuCZUYkRYlWU-oqpcBgvr3VBTI0HT8JP382ROWCKTDkbMUQh34-xGCjLPsPtxAJgfW7xS-YA2PsqThA%3D%3D?uid=0&filename=esp32-2.0.11.zip&disposition=attachment&hash=gyiMs9OfIupSNJg%2BhZMLQCwCczHMsnF0e%2BZ4aLOiQxcptwER7WtJx/emw1XVNurJq/J6bpmRyOJonT3VoXnDag%3D%3D&limit=0&content_type=application%2Fzip&owner_uid=1660498924&fsize=311700147&hid=00532fc96bf631e6edc29876415794b5&media_type=compressed&tknv=v2",
+          "url": "https://downloader.disk.yandex.ru/disk/a4fa369d47667469fd260ecbe6486891780948b716cf25f6302b78756bdc4ee5/6767584d/YvAxS3tOuCZUYkRYlWU-okmP3aU0pFlwDyAOsYWpG2gusx2YTDAJB14c-arO2u7zlhtqY8cfXaojiZKJ99uM4g%3D%3D?uid=1660498924&filename=esp32-2.0.11.zip&disposition=attachment&hash=&limit=0&content_type=application%2Fzip&owner_uid=1660498924&fsize=95146963&hid=7f68b110ab771f410ff7bc9b4b4579a5&media_type=compressed&tknv=v2&etag=64fd853fadd3e559b31d7cd03ba0549e",
           "archiveFileName": "esp32-2.0.11.zip",
-          "checksum": "SHA-256:181679fd3a883a2411cf766dd2f3344052235069d556b6ad0e35aaea5a405847",
-          "size": "311700147",
+          "checksum": "SHA-256:f18d23988ffa40cfcd8f9f79ae0bdaab90cc859661fb7ecd872972f3bb9141ed",
+          "size": "95146963",
           "help": {
             "online": ""
           },
@@ -40,27 +40,7 @@
             },
             {
               "packager": "esp32",
-              "name": "xtensa-esp32s2-elf-gcc",
-              "version": "esp-2021r2-patch5-8.4.0"
-            },
-            {
-              "packager": "esp32",
-              "name": "xtensa-esp32s3-elf-gcc",
-              "version": "esp-2021r2-patch5-8.4.0"
-            },
-            {
-              "packager": "esp32",
               "name": "xtensa-esp-elf-gdb",
-              "version": "11.2_20220823"
-            },
-            {
-              "packager": "esp32",
-              "name": "riscv32-esp-elf-gcc",
-              "version": "esp-2021r2-patch5-8.4.0"
-            },
-            {
-              "packager": "esp32",
-              "name": "riscv32-esp-elf-gdb",
               "version": "11.2_20220823"
             },
             {
