@@ -12,7 +12,7 @@
         {
           "name": "CrazyMgBot",
           "architecture": "esp32",
-          "version": "1.0.1",
+          "version": "1.0.0",
           "category": "ESP32",
           "url": "https://downloader.disk.yandex.ru/disk/3110357c51a2732cee016f85c90f9979add1270dcf8d1fda719af99c7eacae40/6766d971/YvAxS3tOuCZUYkRYlWU-oqpcBgvr3VBTI0HT8JP382ROWCKTDkbMUQh34-xGCjLPsPtxAJgfW7xS-YA2PsqThA%3D%3D?uid=0&filename=esp32-2.0.11.zip&disposition=attachment&hash=gyiMs9OfIupSNJg%2BhZMLQCwCczHMsnF0e%2BZ4aLOiQxcptwER7WtJx/emw1XVNurJq/J6bpmRyOJonT3VoXnDag%3D%3D&limit=0&content_type=application%2Fzip&owner_uid=1660498924&fsize=311700147&hid=00532fc96bf631e6edc29876415794b5&media_type=compressed&tknv=v2",
           "archiveFileName": "esp32-2.0.11.zip",
