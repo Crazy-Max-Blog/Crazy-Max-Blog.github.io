@@ -3,7 +3,10 @@
     {
       "name": "MGBot",
       "maintainer": "Crazy-Max-Blog",
-      "websiteUrl": "https://github.com/Crazy-Max-Blog/CrazyMgBot",
+      "websiteURL": "https://github.com/Crazy-Max-Blog/CrazyMgBot",
+      "help": {
+        "online": "https://github.com/Crazy-Max-Blog/CrazyMgBot"
+      },
       "platforms": [
         {
           "name": "CrazyMgBot",
@@ -13,8 +16,8 @@
           "category": "ESP32",
           "url": "https://github.com/Crazy-Max-Blog/CrazyMgBot/archive/refs/tags/0.1.0.zip",
           "archiveFileName": "esp32-2.0.11e.zip",
-          "checksum": "SHA-256:071c302fdbd84cd6793df5bd0dacf8a2a3b24a3cffce736f2d36c3b5a179c3a8",
-          "size": "196819495",
+          "checksum": "SHA-256:4040d17788fe16b8bc55999265fbc7835db7dccde22852cbab10052a7d7c6a2f",
+          "size": "97325784",
           "boards": [
             {
               "name": "MGBOT MGB-CAM"
@@ -26,7 +29,6 @@
               "name": "MGBOT IOTIK 32B"
             }
           ],
-          "help": {},
           "toolsDependencies": [
             {
               "packager": "esp32",
@@ -151,11 +153,7 @@
             }
           ]
         }
-      ],
-      "help": {
-        "online": "http://esp32.com"
-      }
+      ]
     }
-  ],
-  "IsTrusted": false
+  ]
 }
