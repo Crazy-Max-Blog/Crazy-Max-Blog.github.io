@@ -16,8 +16,8 @@
           "category": "ESP32",
           "url": "https://github.com/Crazy-Max-Blog/CrazyMgBot/archive/refs/tags/0.1.0.zip",
           "archiveFileName": "esp32-2.0.11e.zip",
-          "checksum": "SHA-256:4040d17788fe16b8bc55999265fbc7835db7dccde22852cbab10052a7d7c6a2f",
-          "size": "97325784",
+          "checksum": "SHA-256:7be86063c500f4450bd3f506d0be2c69267014eb512329061200ec98e265a876",
+          "size": "97293737",
           "boards": [
             {
               "name": "MGBOT MGB-CAM"
