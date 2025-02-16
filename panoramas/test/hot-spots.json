@@ -8,7 +8,7 @@
             "type": "equirectangular",
             "panorama": "1.jpg",
             "autoLoad":true,
-            "hotSpotDebug":true,
+            "hotSpotDebug":false,
             "vaov":45,
             "hotSpots": [
                 {
