@@ -32,7 +32,7 @@
             "type": "equirectangular",
             "panorama": "2.jpg",
             "autoLoad":true,
-            "hotSpotDebug":true,
+            "hotSpotDebug":false,
             "hotSpots": [
                 {
                     "pitch": -6.814559222489046,
