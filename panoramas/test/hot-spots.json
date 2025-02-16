@@ -1,0 +1,47 @@
+{
+    "default":{
+        "firstScene":"home"
+    }, 
+    "scenes":{
+        "home":{
+            "id":"home",
+            "type": "equirectangular",
+            "panorama": "1.jpg",
+            "autoLoad":true,
+            "hotSpotDebug":true,
+            "vaov":45,
+            "hotSpots": [
+                {
+                    "pitch": 19.504311201337618,
+                    "yaw": 176.42663010027087,
+                    "type": "scene",
+                    "sceneId":"test",
+                    "text": "Baltimore Museum of Art"
+                },
+                {
+                    "pitch": 14.1,
+                    "yaw": 1.5,
+                    "type": "info",
+                    "text": "Baltimore Museum of Art",
+                    "URL": "https://artbma.org/"
+                }
+            ]
+        },
+        "test":{
+            "id":"test",
+            "type": "equirectangular",
+            "panorama": "2.jpg",
+            "autoLoad":true,
+            "hotSpotDebug":true,
+            "hotSpots": [
+                {
+                    "pitch": -6.814559222489046,
+                    "yaw": 111.72660252135717,
+                    "type": "scene",
+                    "sceneId":"home",
+                    "text": "North Charles Street"
+                }
+            ]
+        }
+    }
+}
