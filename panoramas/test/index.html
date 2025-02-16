@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pannellum Example</title>
+    <link rel="stylesheet" href="pannellum.css"/>
+    <script src="pannellum.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        #panorama {
+            min-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="panorama"></div>
+    <script>
+        var config = {};
+        
+        // Get JSON configuration file
+        request = new XMLHttpRequest();
+        request.onload = function() {
+            var responseMap = JSON.parse(request.responseText);
+
+            // Merge options
+            for (var key in responseMap) {
+                if (config.hasOwnProperty(key)) {
+                    continue;
+                }
+                config[key] = responseMap[key];
+            }
+
+            // Create viewer
+            config.escapeHTML = true;
+            viewer = pannellum.viewer('panorama', config);
+        };
+        request.open('GET', "hot-spots.json");
+        request.send();
+    </script>
+</body>
+</html>
