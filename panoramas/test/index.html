@@ -17,6 +17,7 @@
 <body>
     <div id="panorama"></div>
     <script>
+        window.onload = function () {
         var config = {};
         
         // Get JSON configuration file
@@ -38,6 +39,7 @@
         };
         request.open('GET', "hot-spots.json");
         request.send();
+        }
     </script>
 </body>
 </html>
