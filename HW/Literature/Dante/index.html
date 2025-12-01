@@ -77,8 +77,12 @@
         #home {
             text-align: center;
             padding: 100px 20px;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('1.jpg') no-repeat center center/cover;
             color: white;
+            min-height: 100vh; /* Чтобы секция занимала всю высоту экрана */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         #home h1 {
             font-size: 3em;
@@ -143,19 +147,128 @@
                 margin: 5px 0;
             }
         }
+
+        /* Контейнер навигации */
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Кнопка меню для мобильных */
+        .menu-toggle {
+            display: none;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .menu-toggle span {
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: #d4af37;
+            border-radius: 2px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+
+        .menu-toggle span:nth-child(1) {
+            top: 0px;
+        }
+
+        .menu-toggle span:nth-child(2) {
+            top: 9px;
+        }
+
+        .menu-toggle span:nth-child(3) {
+            top: 18px;
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            top: 9px;
+            transform: rotate(135deg);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+            left: -60px;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            top: 9px;
+            transform: rotate(-135deg);
+        }
+
+        /* Навигационное меню */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        /* Стили для мобильных */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #2d2d2d;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+                z-index: 999;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav li {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Навигация -->
     <nav>
-        <ul>
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#dossier">Досье на Круг</a></li>
-            <li><a href="#gallery">Галерея грешников</a></li>
-            <li><a href="#bestiary">Бестиарий Ада</a></li>
-            <li><a href="#architecture">Архитектура и пейзаж</a></li>
-            <li><a href="#sources">Источники</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#dossier">Досье на Круг</a></li>
+                <li><a href="#gallery">Галерея грешников</a></li>
+                <li><a href="#bestiary">Бестиарий Ада</a></li>
+                <li><a href="#architecture">Архитектура и пейзаж</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Главный экран -->
@@ -174,10 +287,9 @@
     <section id="dossier">
         <div class="container">
             <h2>Досье на Круг</h2>
-            <p><strong>Номер и название круга:</strong> Шестой круг: Еретики</p>
-            <p><strong>Ключевая цитата:</strong> "Здесь погребены ересиархи" (Ад, IX, 127-129)</p>
-            <p><strong>Кто здесь страдает?</strong> В этом круге мучаются души еретиков и их последователей, отрицавших бессмертие души и догматы христианской веры.</p>
-            <p><strong>Божественная кара:</strong> Контраппасо заключается в том, что еретики, отрицавшие бессмертие души, навечно заключены в раскаленные гробницы. Как при жизни они отходили от истины, так и в аду они лишены света и свободы, погребенные заживо в вечном пламени.</p>
+            <p><strong>Шестой круг: Еретики</strong></p>
+            <p><strong>В этом круге мучаются</strong> души еретиков и их последователей, отрицавших бессмертие души и догматы христианской веры.</p>
+            <p><strong>Контраппасо (Божественная кара)</strong> заключается в том, что еретики, отрицавшие бессмертие души, навечно заключены в раскаленные гробницы. Как при жизни они отходили от истины, так и в аду они лишены света и свободы, погребенные заживо в вечном пламени.</p>
         </div>
     </section>
 
@@ -191,21 +303,18 @@
                     <p><strong>Историческая справка:</strong> Флорентийский дворянин, лидер гибеллинов.</p>
                     <p><strong>Грех:</strong> Политический лидер фракции гибеллинов, придерживался материалистических взглядов, отрицал бессмертие души.</p>
                     <p><strong>Диалог с Данте:</strong> Фарината гордо стоит в своей гробнице, несмотря на мучения. Он говорит с Данте о политике, предсказывает ему изгнание из Флоренции. Он кажется надменным и нераскаявшимся.</p>
-                    <img src="https://via.placeholder.com/300x200/333333/cccccc?text=Фарината" alt="Фарината дельи Уберти">
                 </div>
                 <div class="character">
                     <h3>Кавальканте Кавальканти</h3>
                     <p><strong>Историческая справка:</strong> Флорентийский философ, поэт и политический деятель, отец друга Данте — Гвидо Кавальканти.</p>
                     <p><strong>Грех:</strong> Разделял эпикурейские взгляды, отрицал загробную жизнь.</p>
                     <p><strong>Диалог с Данте:</strong> Кавальканте обеспокоен судьбой своего сына Гвидо. Он ошибочно полагает, что Гвидо мертв, и впадает в отчаяние. Его любовь к сыну показывает его человечность, несмотря на еретические убеждения.</p>
-                    <img src="https://via.placeholder.com/300x200/333333/cccccc?text=Кавальканте" alt="Кавальканте Кавальканти">
                 </div>
                 <div class="character">
                     <h3>Эпикур</h3>
                     <p><strong>Историческая справка:</strong> Древнегреческий философ, основатель эпикуреизма.</p>
                     <p><strong>Грех:</strong> Материалистические взгляды, отрицание загробной жизни и божественного провидения.</p>
                     <p><strong>Диалог с Данте:</strong> Отсутствует.</p>
-                    <img src="https://via.placeholder.com/300x200/333333/cccccc?text=Эпикур" alt="Эпикур">
                 </div>
             </div>
         </div>
@@ -218,7 +327,6 @@
             <p><strong>Кто охраняет этот круг?</strong> Три Фурии — Мегера (ненавистница), Тисифона (мстящая за убийство), Алекто (неуёмная).</p>
             <p><strong>Происхождение монстра:</strong> Фурии — это персонажи древнегреческой мифологии, богини мести и наказания.</p>
             <p><strong>Описание его роли у Данте:</strong> На протяжении целой вечности они терзают еретиков и лжеучителей в раскаленных могилах.</p>
-            <img src="https://via.placeholder.com/600x400/333333/cccccc?text=Фурии" alt="Три Фурии" style="width:100%; max-width:600px; display:block; margin:20px auto;">
         </div>
     </section>
 
@@ -226,27 +334,32 @@
     <section id="architecture">
         <div class="container">
             <h2>Архитектура и пейзаж</h2>
-            <p><strong>Опишите обстановку:</strong> Шестой круг — это Стены города Дита, где еретики и лжеучители наказаны вечным существованием в виде призраков в раскалённых могилах.</p>
+            <p><strong>Шестой круг</strong> — это Стены города Дита, где еретики и лжеучители наказаны вечным существованием в виде призраков в раскалённых могилах.</p>
             <p><strong>Атмосфера:</strong> Души грешников находятся в состоянии вечной муки и скорби, превращаясь в призраков. Царят стоны, плач и гнетущая тяжесть вечного осуждения.</p>
-            <img src="https://via.placeholder.com/600x400/333333/cccccc?text=Карта+6+круга" alt="Карта шестого круга" style="width:100%; max-width:600px; display:block; margin:20px auto;">
-        </div>
-    </section>
-
-    <!-- Источники -->
-    <section id="sources">
-        <div class="container">
-            <h2>Источники</h2>
-            <ul>
-                <li>Данте Алигьери. Божественная комедия. Ад.</li>
-                <li>Иллюстрации: Гюстав Доре</li>
-                <li>Мифологическая энциклопедия</li>
-                <li>Исторические справки о Флоренции XIII века</li>
-            </ul>
         </div>
     </section>
 
     <footer style="text-align: center; padding: 20px; background-color: #2d2d2d;">
-        <p>© 2023 Проект по "Божественной комедии" Данте. 8 класс</p>
+        <p>© 2025 Проект по "Божественной комедии" Данте. 8 класс</p>
     </footer>
+
+    <script>
+        // Переключение мобильного меню
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Закрытие меню при клике на ссылку
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
