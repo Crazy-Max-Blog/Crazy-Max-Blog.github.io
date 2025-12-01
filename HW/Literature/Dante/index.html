@@ -250,6 +250,27 @@
                 text-align: center;
             }
         }
+
+
+img {
+    object-fit: cover;
+    border-radius: 8px;
+    /* Плавный переход в фон */
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.5),
+        inset 0 0 0 1px rgba(201, 169, 110, 0.1);
+    border: 1px solid rgba(201, 169, 110, 0.2);
+    filter: saturate(0.9) brightness(0.95);
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    filter: saturate(1.1) brightness(1.05);
+    box-shadow: 
+        0 8px 20px rgba(201, 169, 110, 0.3),
+        inset 0 0 0 1px rgba(201, 169, 110, 0.3);
+    transform: translateY(-3px);
+}
     </style>
 </head>
 <body>
@@ -318,6 +339,7 @@
                 </div>
             </div>
         </div>
+        <img src="3.jpg" alt="Три Фурии" style="width:100%; max-width:600px; display:block; margin:20px auto;">
     </section>
 
     <!-- Бестиарий Ада -->
@@ -328,6 +350,7 @@
             <p><strong>Происхождение монстра:</strong> Фурии — это персонажи древнегреческой мифологии, богини мести и наказания.</p>
             <p><strong>Описание его роли у Данте:</strong> На протяжении целой вечности они терзают еретиков и лжеучителей в раскаленных могилах.</p>
         </div>
+        <img src="2.png" alt="Три Фурии" style="width:100%; max-width:600px; display:block; margin:20px auto;">
     </section>
 
     <!-- Архитектура и пейзаж -->
